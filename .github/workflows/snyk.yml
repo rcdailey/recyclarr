@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Snyk
+
+on:
+  push:
+    paths:
+      - .github/workflows/snyk.yml
+      - "**.cs"
+      - "**.props"
+      - "**.sln"
+      - "**.csproj"
+  pull_request:
+    paths:
+      - .github/workflows/snyk.yml
+      - "**.cs"
+      - "**.props"
+      - "**.sln"
+      - "**.csproj"
+
+jobs:
+  snyk:
+    name: Snyk
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Source Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # avoid shallow clone for GitVersion
+
+      - name: dotnet restore
+        run: dotnet restore src
+
+      - name: Snyk Test
+        uses: snyk/actions/dotnet@master
+        continue-on-error: true
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --sarif-file-output=snyk.sarif --file=src/Recyclarr.sln
+
+      - name: Snyk Monitor
+        uses: snyk/actions/dotnet@master
+        continue-on-error: true
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          command: monitor
+          args: --file=src/Recyclarr.sln
+
+      - name: Publish to Github CS
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: snyk.sarif
