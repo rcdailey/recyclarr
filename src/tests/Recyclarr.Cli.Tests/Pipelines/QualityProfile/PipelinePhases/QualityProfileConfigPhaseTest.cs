@@ -1,6 +1,11 @@
+using System.IO.Abstractions;
+using System.Text.Json;
 using Recyclarr.Cli.Pipelines.CustomFormat.Models;
+using Recyclarr.Cli.Pipelines.QualityProfile.Api;
 using Recyclarr.Cli.Pipelines.QualityProfile.PipelinePhases;
 using Recyclarr.Cli.TestLibrary;
+using Recyclarr.Common.TestLibrary;
+using Recyclarr.Json;
 using Recyclarr.TrashLib.Config;
 using Recyclarr.TrashLib.TestLibrary;
 
@@ -263,5 +268,20 @@ public class QualityProfileConfigPhaseTest
         var result = sut.Execute(config);
 
         result.Should().BeEmpty();
+    }
+
+    [Test]
+    public void DemoNullableNotWorking()
+    {
+        var fs = new MockFileSystem();
+
+        var jsonFile = fs.CurrentDirectory().File("testdata.json");
+        fs.AddSameFileFromEmbeddedResource(jsonFile, typeof(QualityProfileConfigPhaseTest));
+        jsonFile.Refresh();
+
+        using var data = jsonFile.OpenRead();
+
+        var unboxed = JsonSerializer.Deserialize<QualityProfileDto>(data, GlobalJsonSerializerSettings.Services);
+        var boxed = JsonSerializer.Serialize(unboxed, GlobalJsonSerializerSettings.Services);
     }
 }

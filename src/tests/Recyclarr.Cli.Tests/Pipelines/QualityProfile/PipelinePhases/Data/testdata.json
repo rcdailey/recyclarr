@@ -1,0 +1,701 @@
+{
+  "id": 7,
+  "name": "Anime",
+  "upgradeAllowed": true,
+  "minFormatScore": 100,
+  "cutoff": 7,
+  "cutoffFormatScore": 10000,
+  "formatItems": [
+    {
+      "format": 1,
+      "name": "Anime BD Tier 01 (Top SeaDex Muxers)",
+      "score": 1400
+    },
+    {
+      "format": 2,
+      "name": "Anime BD Tier 02 (SeaDex Muxers)",
+      "score": 1300
+    },
+    {
+      "format": 3,
+      "name": "Anime BD Tier 03 (SeaDex Muxers)",
+      "score": 1200
+    },
+    {
+      "format": 4,
+      "name": "Anime BD Tier 04 (SeaDex Muxers)",
+      "score": 1100
+    },
+    {
+      "format": 5,
+      "name": "Anime BD Tier 05 (Remuxes)",
+      "score": 1000
+    },
+    {
+      "format": 6,
+      "name": "Anime BD Tier 06 (FanSubs)",
+      "score": 900
+    },
+    {
+      "format": 7,
+      "name": "Anime BD Tier 07 (P2P/Scene)",
+      "score": 800
+    },
+    {
+      "format": 8,
+      "name": "Anime BD Tier 08 (Mini Encodes)",
+      "score": 700
+    },
+    {
+      "format": 9,
+      "name": "Anime Web Tier 01 (Muxers)",
+      "score": 600
+    },
+    {
+      "format": 10,
+      "name": "Anime Web Tier 02 (Top FanSubs)",
+      "score": 500
+    },
+    {
+      "format": 32,
+      "name": "WEB Tier 01",
+      "score": 1700
+    },
+    {
+      "format": 33,
+      "name": "WEB Tier 02",
+      "score": 1650
+    },
+    {
+      "format": 11,
+      "name": "Anime Web Tier 03 (Official Subs)",
+      "score": 400
+    },
+    {
+      "format": 34,
+      "name": "WEB Tier 03",
+      "score": 1600
+    },
+    {
+      "format": 12,
+      "name": "Anime Web Tier 04 (Official Subs)",
+      "score": 300
+    },
+    {
+      "format": 13,
+      "name": "Anime Web Tier 05 (FanSubs)",
+      "score": 200
+    },
+    {
+      "format": 14,
+      "name": "Anime Web Tier 06 (FanSubs)",
+      "score": 100
+    },
+    {
+      "format": 38,
+      "name": "Anime Raws",
+      "score": 0
+    },
+    {
+      "format": 15,
+      "name": "Anime LQ Groups",
+      "score": 0
+    },
+    {
+      "format": 16,
+      "name": "v0",
+      "score": 0
+    },
+    {
+      "format": 17,
+      "name": "v1",
+      "score": 0
+    },
+    {
+      "format": 18,
+      "name": "v2",
+      "score": 0
+    },
+    {
+      "format": 19,
+      "name": "v3",
+      "score": 0
+    },
+    {
+      "format": 20,
+      "name": "v4",
+      "score": 0
+    },
+    {
+      "format": 39,
+      "name": "Dubs Only",
+      "score": 0
+    },
+    {
+      "format": 21,
+      "name": "CR",
+      "score": 0
+    },
+    {
+      "format": 22,
+      "name": "FUNi",
+      "score": 0
+    },
+    {
+      "format": 23,
+      "name": "VRV",
+      "score": 0
+    },
+    {
+      "format": 27,
+      "name": "B-Global",
+      "score": 0
+    },
+    {
+      "format": 28,
+      "name": "Bilibili",
+      "score": 0
+    },
+    {
+      "format": 29,
+      "name": "HIDIVE",
+      "score": 0
+    },
+    {
+      "format": 40,
+      "name": "Remux Tier 01",
+      "score": 0
+    },
+    {
+      "format": 41,
+      "name": "Remux Tier 02",
+      "score": 0
+    },
+    {
+      "format": 26,
+      "name": "AMZN",
+      "score": 0
+    },
+    {
+      "format": 24,
+      "name": "DSNP",
+      "score": 0
+    },
+    {
+      "format": 25,
+      "name": "NF",
+      "score": 0
+    },
+    {
+      "format": 35,
+      "name": "Anime Dual Audio",
+      "score": 0
+    },
+    {
+      "format": 37,
+      "name": "10bit",
+      "score": 0
+    },
+    {
+      "format": 36,
+      "name": "Uncensored",
+      "score": 0
+    },
+    {
+      "format": 31,
+      "name": "VOSTFR",
+      "score": 0
+    },
+    {
+      "format": 30,
+      "name": "AV1",
+      "score": 0
+    },
+    {
+      "format": 42,
+      "name": "DV HDR10",
+      "score": 0
+    },
+    {
+      "format": 43,
+      "name": "DV HLG",
+      "score": 0
+    },
+    {
+      "format": 44,
+      "name": "DV SDR",
+      "score": 0
+    },
+    {
+      "format": 45,
+      "name": "DV",
+      "score": 0
+    },
+    {
+      "format": 46,
+      "name": "HDR (undefined)",
+      "score": 0
+    },
+    {
+      "format": 47,
+      "name": "HDR",
+      "score": 0
+    },
+    {
+      "format": 48,
+      "name": "HDR10",
+      "score": 0
+    },
+    {
+      "format": 49,
+      "name": "HDR10+",
+      "score": 0
+    },
+    {
+      "format": 50,
+      "name": "HLG",
+      "score": 0
+    },
+    {
+      "format": 51,
+      "name": "PQ",
+      "score": 0
+    },
+    {
+      "format": 52,
+      "name": "DV (WEBDL)",
+      "score": 0
+    },
+    {
+      "format": 53,
+      "name": "BR-DISK",
+      "score": 0
+    },
+    {
+      "format": 54,
+      "name": "LQ",
+      "score": 0
+    },
+    {
+      "format": 55,
+      "name": "SDR",
+      "score": 0
+    },
+    {
+      "format": 56,
+      "name": "Scene",
+      "score": 0
+    },
+    {
+      "format": 57,
+      "name": "Repack/Proper",
+      "score": 0
+    },
+    {
+      "format": 58,
+      "name": "Repack v2",
+      "score": 0
+    },
+    {
+      "format": 59,
+      "name": "Repack v3",
+      "score": 0
+    },
+    {
+      "format": 60,
+      "name": "ATVP",
+      "score": 0
+    },
+    {
+      "format": 61,
+      "name": "DCU",
+      "score": 0
+    },
+    {
+      "format": 62,
+      "name": "HBO",
+      "score": 0
+    },
+    {
+      "format": 63,
+      "name": "HMAX",
+      "score": 0
+    },
+    {
+      "format": 64,
+      "name": "HULU",
+      "score": 0
+    },
+    {
+      "format": 65,
+      "name": "iT",
+      "score": 0
+    },
+    {
+      "format": 66,
+      "name": "MAX",
+      "score": 0
+    },
+    {
+      "format": 67,
+      "name": "NLZ",
+      "score": 0
+    },
+    {
+      "format": 68,
+      "name": "PCOK",
+      "score": 0
+    },
+    {
+      "format": 69,
+      "name": "PMTP",
+      "score": 0
+    },
+    {
+      "format": 70,
+      "name": "QIBI",
+      "score": 0
+    },
+    {
+      "format": 71,
+      "name": "RED",
+      "score": 0
+    },
+    {
+      "format": 72,
+      "name": "SHO",
+      "score": 0
+    },
+    {
+      "format": 73,
+      "name": "STAN",
+      "score": 0
+    },
+    {
+      "format": 74,
+      "name": "VDL",
+      "score": 0
+    },
+    {
+      "format": 75,
+      "name": "CC",
+      "score": 0
+    },
+    {
+      "format": 76,
+      "name": "UHD Streaming Boost",
+      "score": 0
+    },
+    {
+      "format": 77,
+      "name": "UHD Streaming Cut",
+      "score": 0
+    },
+    {
+      "format": 78,
+      "name": "x265 (HD)",
+      "score": 0
+    },
+    {
+      "format": 79,
+      "name": "HD Bluray Tier 01",
+      "score": 0
+    },
+    {
+      "format": 80,
+      "name": "HD Bluray Tier 02",
+      "score": 0
+    },
+    {
+      "format": 81,
+      "name": "WEB Scene",
+      "score": 0
+    }
+  ],
+  "items": [
+    {
+      "id": null,
+      "name": null,
+      "allowed": true,
+      "quality": {
+        "id": 7,
+        "name": "Bluray-1080p",
+        "source": "bluray",
+        "resolution": 1080
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 21,
+        "name": "Bluray-2160p Remux",
+        "source": "blurayRaw",
+        "resolution": 2160
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 19,
+        "name": "Bluray-2160p",
+        "source": "bluray",
+        "resolution": 2160
+      },
+      "items": []
+    },
+    {
+      "id": 1003,
+      "name": "WEB 2160p",
+      "allowed": false,
+      "quality": null,
+      "items": [
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 18,
+            "name": "WEBDL-2160p",
+            "source": "web",
+            "resolution": 2160
+          },
+          "items": []
+        },
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 17,
+            "name": "WEBRip-2160p",
+            "source": "webRip",
+            "resolution": 2160
+          },
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 16,
+        "name": "HDTV-2160p",
+        "source": "television",
+        "resolution": 2160
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 20,
+        "name": "Bluray-1080p Remux",
+        "source": "blurayRaw",
+        "resolution": 1080
+      },
+      "items": []
+    },
+    {
+      "id": 1002,
+      "name": "WEB 1080p",
+      "allowed": false,
+      "quality": null,
+      "items": [
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 3,
+            "name": "WEBDL-1080p",
+            "source": "web",
+            "resolution": 1080
+          },
+          "items": []
+        },
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 15,
+            "name": "WEBRip-1080p",
+            "source": "webRip",
+            "resolution": 1080
+          },
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 6,
+        "name": "Bluray-720p",
+        "source": "bluray",
+        "resolution": 720
+      },
+      "items": []
+    },
+    {
+      "id": 1001,
+      "name": "WEB 720p",
+      "allowed": false,
+      "quality": null,
+      "items": [
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 5,
+            "name": "WEBDL-720p",
+            "source": "web",
+            "resolution": 720
+          },
+          "items": []
+        },
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 14,
+            "name": "WEBRip-720p",
+            "source": "webRip",
+            "resolution": 720
+          },
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 10,
+        "name": "Raw-HD",
+        "source": "televisionRaw",
+        "resolution": 1080
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 9,
+        "name": "HDTV-1080p",
+        "source": "television",
+        "resolution": 1080
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 4,
+        "name": "HDTV-720p",
+        "source": "television",
+        "resolution": 720
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 13,
+        "name": "Bluray-480p",
+        "source": "bluray",
+        "resolution": 480
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 2,
+        "name": "DVD",
+        "source": "dvd",
+        "resolution": 480
+      },
+      "items": []
+    },
+    {
+      "id": 1000,
+      "name": "WEB 480p",
+      "allowed": false,
+      "quality": null,
+      "items": [
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 8,
+            "name": "WEBDL-480p",
+            "source": "web",
+            "resolution": 480
+          },
+          "items": []
+        },
+        {
+          "id": null,
+          "name": null,
+          "allowed": false,
+          "quality": {
+            "id": 12,
+            "name": "WEBRip-480p",
+            "source": "webRip",
+            "resolution": 480
+          },
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 1,
+        "name": "SDTV",
+        "source": "television",
+        "resolution": 480
+      },
+      "items": []
+    },
+    {
+      "id": null,
+      "name": null,
+      "allowed": false,
+      "quality": {
+        "id": 0,
+        "name": "Unknown",
+        "source": "unknown",
+        "resolution": 0
+      },
+      "items": []
+    }
+  ]
+}

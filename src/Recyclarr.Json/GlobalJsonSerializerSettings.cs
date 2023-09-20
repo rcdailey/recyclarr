@@ -16,6 +16,7 @@ public static class GlobalJsonSerializerSettings
         // Quality Definitions, do not get written out to JSON request bodies.
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+        // IgnoreNullValues = true,
         NumberHandling = JsonNumberHandling.AllowReadingFromString,
         TypeInfoResolver = new DefaultJsonTypeInfoResolver
         {
