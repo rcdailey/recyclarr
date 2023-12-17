@@ -4,16 +4,13 @@ using Recyclarr.Json;
 
 namespace Recyclarr.Repo;
 
-public class TrashRepoMetadataBuilder : IRepoMetadataBuilder
+public class TrashRepoMetadataBuilder(ITrashGuidesRepo repo) : IRepoMetadataBuilder
 {
-    private readonly Lazy<RepoMetadata> _metadata;
-    private readonly IDirectoryInfo _repoPath;
+    private RepoMetadata? _metadata;
+    private readonly IDirectoryInfo _repoPath = repo.Path;
 
-    public TrashRepoMetadataBuilder(ITrashGuidesRepo repo)
-    {
-        _repoPath = repo.Path;
-        _metadata = new Lazy<RepoMetadata>(() => Deserialize(_repoPath.File("metadata.json")));
-    }
+    public IFileInfo MetadataPath => _repoPath.File("metadata.json");
+    public IDirectoryInfo DocsDirectory => _repoPath.SubDirectory("docs");
 
     private static RepoMetadata Deserialize(IFileInfo jsonFile)
     {
@@ -33,10 +30,8 @@ public class TrashRepoMetadataBuilder : IRepoMetadataBuilder
         return listOfDirectories.Select(x => _repoPath.SubDirectory(x)).ToList();
     }
 
-    public IDirectoryInfo DocsDirectory => _repoPath.SubDirectory("docs");
-
     public RepoMetadata GetMetadata()
     {
-        return _metadata.Value;
+        return _metadata ??= Deserialize(MetadataPath);
     }
 }

@@ -1,7 +1,7 @@
 using System.IO.Abstractions;
 using Recyclarr.Settings;
 
-namespace Recyclarr.Cli.IntegrationTests;
+namespace Recyclarr.Cli.IntegrationTests.Tests;
 
 [TestFixture]
 internal class ServiceCompatibilityIntegrationTest : CliIntegrationFixture

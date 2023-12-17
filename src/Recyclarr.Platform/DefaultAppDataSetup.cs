@@ -2,6 +2,7 @@ using System.IO.Abstractions;
 
 namespace Recyclarr.Platform;
 
+// Do NOT inject ILogger here because it introduces a circular dependency. LoggerFactory depends on IAppPaths.
 public class DefaultAppDataSetup(IEnvironment env, IFileSystem fs) : IAppDataSetup
 {
     public string? AppDataDirectoryOverride { get; set; }
