@@ -19,7 +19,9 @@ public class ApiServicesAutofacModule : Module
             .As<IFlurlClientCache>()
             .SingleInstance();
 
-        builder.RegisterType<SystemApiService>().As<ISystemApiService>();
+        // Single instance because it holds a cache of HttpClient objects
+        builder.RegisterType<ServarrApiServiceFactory>().SingleInstance();
+
         builder.RegisterType<ServarrRequestBuilder>().As<IServarrRequestBuilder>();
         builder.RegisterType<QualityProfileApiService>().As<IQualityProfileApiService>();
         builder.RegisterType<CustomFormatApiService>().As<ICustomFormatApiService>();

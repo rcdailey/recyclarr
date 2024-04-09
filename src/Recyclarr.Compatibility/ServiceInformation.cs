@@ -5,13 +5,14 @@ using Serilog;
 
 namespace Recyclarr.Compatibility;
 
-public class ServiceInformation(ISystemApiService api, ILogger log) : IServiceInformation
+public class ServiceInformation(ServarrApiServiceFactory apiFactory, ILogger log) : IServiceInformation
 {
     public async Task<Version> GetVersion(IServiceConfiguration config)
     {
         try
         {
-            var status = await api.GetStatus(config);
+            var api = apiFactory.Create<ISystemApiService>(config);
+            var status = await api.GetStatus();
             log.Debug("{Service} Version: {Version}", status.AppName, status.Version);
             return new Version(status.Version);
         }

@@ -2,6 +2,8 @@
   <ItemGroup>
     <PackageReference Include="Flurl.Http" />
     <PackageReference Include="JetBrains.Annotations" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+    <PackageReference Include="Refit" />
     <PackageReference Include="Serilog" />
   </ItemGroup>
   <ItemGroup>
