@@ -3,4 +3,7 @@
     <ProjectReference Include="..\..\src\Recyclarr.Cli\Recyclarr.Cli.csproj" />
     <ProjectReference Include="..\Recyclarr.IntegrationTests\Recyclarr.IntegrationTests.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Testcontainers" />
+  </ItemGroup>
 </Project>

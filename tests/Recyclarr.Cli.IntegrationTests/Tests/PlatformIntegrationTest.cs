@@ -12,14 +12,8 @@ namespace Recyclarr.Cli.IntegrationTests.Tests;
 [TestFixture]
 public class PlatformIntegrationTest : IntegrationTestFixture2
 {
-    protected override void RegisterStubsAndMocks(ContainerBuilder builder)
-    {
-        base.RegisterStubsAndMocks(builder);
-        builder.RegisterMockFor<IRuntimeInformation>();
-    }
-
     [Test, AutoMockData]
-    public async Task Migrate_app_data_on_mac_os_dotnet8(CommandContext ctx)
+    public async Task Sync_successful(CommandContext ctx)
     {
         // The "old" app data directory has to be in place before we create SyncCommand, since we want the
         // automatic/transparent move of that directory to happen before the migration system checks it.

@@ -61,6 +61,9 @@ public abstract class IntegrationTestFixture2 : IDisposable
         builder.RegisterInstance(Console).As<IAnsiConsole>();
         builder.RegisterInstance(Logger).As<ILogger>();
 
+        // Platform related mocks
+        builder.RegisterMockFor<IRuntimeInformation>();
+
         builder.RegisterMockFor<IGitRepository>();
         builder.RegisterMockFor<IGitRepositoryFactory>();
         builder.RegisterMockFor<IServiceInformation>(m =>
