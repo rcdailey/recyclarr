@@ -11,15 +11,30 @@ jobs:
     name: Enforce Retention Policy
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3.2.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch multi-platform package version SHAs
+        id: multi-arch-digests
+        run: |
+          shas="$(pwsh ci/Get-DockerTagSHAs.ps1)"
+          echo "shas=$shas" >> $GITHUB_OUTPUT
+
       - name: Delete old pre-release images
-        uses: snok/container-retention-policy@v2
+        uses: snok/container-retention-policy@v3.0.0
         with:
           image-names: recyclarr
-          filter-tags: '*-dev.*'
-          cut-off: One week ago CST
-          keep-at-least: 1
-          account-type: org
-          org-name: recyclarr
+          account: recyclarr
+          image-tags: '*-dev.*'
           token: ${{ secrets.GITHUB_TOKEN }}
-          token-type: github-token
+          cut-off: 1w
+          keep-n-most-recent: 1
+          skip-shas: ${{ steps.multi-arch-digests.outputs.shas }}
           dry-run: true # TEMP
