@@ -19,7 +19,7 @@ public class CustomFormatDataListerTest
     {
         var testData = new[] { NewCf.Data("First", "123"), NewCf.Data("Second", "456") };
 
-        guide.GetCustomFormatData(default!).ReturnsForAnyArgs(testData);
+        guide.GetGuideData(default!).ReturnsForAnyArgs(testData);
         settings.ScoreSets.Returns(false);
 
         sut.List(settings);

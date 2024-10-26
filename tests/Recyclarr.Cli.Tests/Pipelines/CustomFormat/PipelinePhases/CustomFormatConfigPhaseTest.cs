@@ -17,7 +17,7 @@ public class CustomFormatConfigPhaseTest
 
         var guide = fixture.Freeze<ICustomFormatGuideService>();
         guide
-            .GetCustomFormatData(default!)
+            .GetGuideData(default!)
             .ReturnsForAnyArgs([NewCf.Data("one", "cf1"), NewCf.Data("two", "cf2")]);
 
         fixture.Inject<IServiceConfiguration>(
@@ -48,7 +48,7 @@ public class CustomFormatConfigPhaseTest
         var fixture = NSubstituteFixture.Create();
 
         var guide = fixture.Freeze<ICustomFormatGuideService>();
-        guide.GetCustomFormatData(default!).ReturnsForAnyArgs([NewCf.Data("", "cf4")]);
+        guide.GetGuideData(default!).ReturnsForAnyArgs([NewCf.Data("", "cf4")]);
 
         fixture.Inject<IServiceConfiguration>(
             NewConfig.Radarr() with

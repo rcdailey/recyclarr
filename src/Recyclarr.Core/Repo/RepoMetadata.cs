@@ -5,6 +5,7 @@ public record RadarrMetadata
     public IReadOnlyCollection<string> CustomFormats { get; init; } = Array.Empty<string>();
     public IReadOnlyCollection<string> Qualities { get; init; } = Array.Empty<string>();
     public IReadOnlyCollection<string> Naming { get; init; } = Array.Empty<string>();
+    public IReadOnlyCollection<string> CustomFormatGroups { get; init; } = Array.Empty<string>();
 }
 
 public record SonarrMetadata
@@ -12,6 +13,7 @@ public record SonarrMetadata
     public IReadOnlyCollection<string> Qualities { get; init; } = Array.Empty<string>();
     public IReadOnlyCollection<string> CustomFormats { get; init; } = Array.Empty<string>();
     public IReadOnlyCollection<string> Naming { get; init; } = Array.Empty<string>();
+    public IReadOnlyCollection<string> CustomFormatGroups { get; init; } = Array.Empty<string>();
 }
 
 public record JsonPaths

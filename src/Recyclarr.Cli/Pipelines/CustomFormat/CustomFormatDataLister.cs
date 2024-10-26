@@ -34,7 +34,7 @@ public class CustomFormatDataLister(IAnsiConsole console, ICustomFormatGuideServ
         }
 
         var scoreSets = guide
-            .GetCustomFormatData(serviceType)
+            .GetGuideData(serviceType)
             .SelectMany(x => x.TrashScores.Keys)
             .Distinct(StringComparer.InvariantCultureIgnoreCase)
             .Order(StringComparer.InvariantCultureIgnoreCase);
@@ -55,7 +55,7 @@ public class CustomFormatDataLister(IAnsiConsole console, ICustomFormatGuideServ
         }
 
         var categories = guide
-            .GetCustomFormatData(serviceType)
+            .GetGuideData(serviceType)
             .Where(x => !string.IsNullOrWhiteSpace(x.TrashId))
             .OrderBy(x => x.Name)
             .ToLookup(x => x.Category)

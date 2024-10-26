@@ -2,5 +2,5 @@ namespace Recyclarr.TrashGuide.CustomFormat;
 
 public interface ICustomFormatGuideService
 {
-    ICollection<CustomFormatData> GetCustomFormatData(SupportedServices serviceType);
+    ICollection<CustomFormatData> GetGuideData(SupportedServices serviceType);
 }

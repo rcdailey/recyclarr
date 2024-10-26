@@ -31,7 +31,7 @@ public class CustomFormatGuideService(
         };
     }
 
-    public ICollection<CustomFormatData> GetCustomFormatData(SupportedServices serviceType)
+    public ICollection<CustomFormatData> GetGuideData(SupportedServices serviceType)
     {
         if (_cache.TryGetValue(serviceType, out var cfData))
         {

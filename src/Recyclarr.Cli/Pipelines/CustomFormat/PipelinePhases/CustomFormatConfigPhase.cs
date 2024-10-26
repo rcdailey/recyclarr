@@ -28,7 +28,7 @@ public class CustomFormatConfigPhase(
             .CustomFormats.SelectMany(x => x.TrashIds)
             .Distinct(StringComparer.InvariantCultureIgnoreCase)
             .GroupJoin(
-                guide.GetCustomFormatData(config.ServiceType),
+                guide.GetGuideData(config.ServiceType),
                 x => x,
                 x => x.TrashId,
                 (id, cf) => (Id: id, CustomFormats: cf)
