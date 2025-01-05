@@ -1,4 +1,5 @@
 using Recyclarr.Cli.Console.Settings;
+using Recyclarr.TrashGuide;
 
 namespace Recyclarr.Cli.Pipelines;
 
@@ -6,5 +7,7 @@ namespace Recyclarr.Cli.Pipelines;
 // aware of the generic parameters.
 public interface ISyncPipeline
 {
-    public Task Execute(ISyncSettings settings, CancellationToken ct);
+    string Description { get; }
+    IReadOnlyCollection<SupportedServices> CompatibleServices { get; }
+    Task Execute(ISyncSettings settings, CancellationToken ct);
 }

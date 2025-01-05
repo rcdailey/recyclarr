@@ -1,19 +1,18 @@
 using Recyclarr.Cli.Console.Settings;
-using Recyclarr.Cli.Pipelines;
 using Recyclarr.Compatibility;
 using Recyclarr.Config.Models;
 
-namespace Recyclarr.Cli.Processors.Sync;
+namespace Recyclarr.Cli.Pipelines;
 
-public class CompositeSyncPipeline(
+public class PipelineExecutor(
     ILogger log,
     IOrderedEnumerable<ISyncPipeline> pipelines,
     IEnumerable<IPipelineCache> caches,
     ServiceAgnosticCapabilityEnforcer enforcer,
     IServiceConfiguration config
-) : ISyncPipeline
+)
 {
-    public virtual async Task Execute(ISyncSettings settings, CancellationToken ct)
+    public async Task Execute(ISyncSettings settings, CancellationToken ct)
     {
         log.Debug("Processing {Server} server {Name}", config.ServiceType, config.InstanceName);
 
@@ -26,6 +25,18 @@ public class CompositeSyncPipeline(
 
         foreach (var pipeline in pipelines)
         {
+            log.Debug("Executing Pipeline: {Pipeline}", pipeline.Description);
+
+            if (!pipeline.CompatibleServices.Contains(config.ServiceType))
+            {
+                log.Debug(
+                    "Skipping this pipeline because it does not support service type {Service}",
+                    config.ServiceType
+                );
+
+                return;
+            }
+
             await pipeline.Execute(settings, ct);
         }
 
