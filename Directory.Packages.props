@@ -66,6 +66,7 @@
     <PackageVersion Include="Serilog.Sinks.NUnit" Version="1.0.3" PrivateAssets="all" />
     <PackageVersion Include="Spectre.Console.Testing" Version="0.49.1" PrivateAssets="all" />
     <PackageVersion Include="TestableIO.System.IO.Abstractions.TestingHelpers" Version="21.2.1" PrivateAssets="all" />
+    <PackageVersion Include="JetBrains.Annotations" Version="2024.3.0" PrivateAssets="all" />
   </ItemGroup>
   <!-- Following found during vulerabilities Code Scan  -->
   <ItemGroup>
@@ -76,6 +77,5 @@
   <ItemGroup>
     <GlobalPackageReference Include="ReferenceTrimmer" Version="3.3.10" />
     <!-- Cannot use the official Jetbrains.Annotations package because it doesn't work with GlobalPackageReference -->
-    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="1.2.1" />
   </ItemGroup>
 </Project>
