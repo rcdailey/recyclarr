@@ -1,8 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Recyclarr.Cli\Recyclarr.Cli.csproj" />
     <ProjectReference Include="..\..\src\Recyclarr.Core\Recyclarr.Core.csproj" />
-    <ProjectReference Include="..\Recyclarr.Core.Tests\Recyclarr.Core.Tests.csproj" />
     <ProjectReference Include="..\Recyclarr.TestLibrary\Recyclarr.TestLibrary.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UnitTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UnitTests\Common\DefaultDataFile.txt" />
+    <EmbeddedResource Include="UnitTests\Common\TestData\DataFile.txt" />
   </ItemGroup>
 </Project>
