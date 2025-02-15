@@ -1,5 +1,2 @@
 <Project>
-  <ItemGroup Condition="$(ProjectName.EndsWith('.Tests'))">
-    <None Remove="TestResults/**/*" />
-  </ItemGroup>
 </Project>
