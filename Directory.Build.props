@@ -27,7 +27,7 @@
 
   <!-- For only NON-TEST projects -->
   <ItemGroup Condition="!$(ProjectName.EndsWith('.Tests'))">
-    <InternalsVisibleTo Include="$(AssemblyName).Tests" />
+    <InternalsVisibleTo Include="$(MSBuildProjectName).Tests" />
   </ItemGroup>
 
   <!-- ReferenceTrimmer - run build with /p:EnableReferenceTrimmer=true to enable -->
