@@ -6,7 +6,6 @@ using Recyclarr.Core.Tests.Reusable;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Parsing;
 
-[TestFixture]
 public class ConfigValidationExecutorTest
 {
     [Test, AutoMockData]

@@ -6,7 +6,6 @@ using Spectre.Console.Testing;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Migration;
 
-[TestFixture]
 public class MigrationExecutorTest
 {
     [Test]

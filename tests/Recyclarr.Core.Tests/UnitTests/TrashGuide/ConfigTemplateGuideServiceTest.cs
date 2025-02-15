@@ -2,7 +2,6 @@ using Recyclarr.TrashGuide;
 
 namespace Recyclarr.Core.Tests.UnitTests.TrashGuide;
 
-[TestFixture]
 public class ConfigTemplateGuideServiceTest
 {
     [Test, AutoMockData]

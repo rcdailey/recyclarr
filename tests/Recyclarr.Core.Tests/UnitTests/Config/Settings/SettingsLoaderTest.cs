@@ -5,7 +5,6 @@ using Recyclarr.Yaml;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Settings;
 
-[TestFixture]
 public class SettingsLoaderTest
 {
     [Test, AutoMockData]

@@ -3,7 +3,6 @@ using Recyclarr.Compatibility.Sonarr;
 
 namespace Recyclarr.Core.Tests.UnitTests.Compatibility.Sonarr;
 
-[TestFixture]
 public class SonarrCapabilityEnforcerTest
 {
     [Test, AutoMockData]

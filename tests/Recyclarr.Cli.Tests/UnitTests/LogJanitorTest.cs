@@ -4,7 +4,6 @@ using Recyclarr.Platform;
 
 namespace Recyclarr.Cli.Tests.UnitTests;
 
-[TestFixture]
 public class LogJanitorTest
 {
     [Test, AutoMockData]

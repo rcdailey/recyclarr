@@ -3,7 +3,6 @@ using Recyclarr.Settings;
 
 namespace Recyclarr.Cli.Tests.IntegrationTests;
 
-[TestFixture]
 internal class ServiceCompatibilityIntegrationTest : CliIntegrationFixture
 {
     [Test]

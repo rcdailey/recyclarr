@@ -3,7 +3,6 @@ using Recyclarr.Config.Models;
 
 namespace Recyclarr.Core.Tests.UnitTests.Cache;
 
-[TestFixture]
 public class CachePersisterTest
 {
     [Test, AutoMockData]

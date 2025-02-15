@@ -6,7 +6,6 @@ using Spectre.Console.Testing;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.CustomFormat;
 
-[TestFixture]
 public class CustomFormatDataListerTest
 {
     [Test, AutoMockData]

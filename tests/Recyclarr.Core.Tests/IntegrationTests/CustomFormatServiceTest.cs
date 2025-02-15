@@ -8,7 +8,6 @@ using Recyclarr.TestLibrary;
 
 namespace Recyclarr.Core.Tests.IntegrationTests;
 
-[TestFixture]
 public class CustomFormatServiceTest : IntegrationTestFixture
 {
     [Test]

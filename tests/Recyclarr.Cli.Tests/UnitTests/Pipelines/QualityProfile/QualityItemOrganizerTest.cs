@@ -5,7 +5,6 @@ using Recyclarr.ServarrApi.QualityProfile;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualityProfile;
 
-[TestFixture]
 public class QualityItemOrganizerTest
 {
     private readonly QualityProfileConfig _config = new()

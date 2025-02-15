@@ -8,7 +8,6 @@ using Recyclarr.TrashGuide.QualitySize;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualitySize.PipelinePhases;
 
-[TestFixture]
 public class QualitySizeConfigPhaseTest
 {
     [Test, AutoMockData]

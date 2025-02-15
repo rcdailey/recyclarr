@@ -9,7 +9,6 @@ using Spectre.Console;
 
 namespace Recyclarr.Cli.Tests.IntegrationTests;
 
-[TestFixture]
 public class CompositionRootTest
 {
     private sealed class ConcreteTypeEnumerator : IEnumerable

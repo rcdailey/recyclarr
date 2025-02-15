@@ -5,7 +5,6 @@ using Recyclarr.TrashGuide;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Filtering;
 
-[TestFixture]
 public class ConfigFiltersTest : IntegrationTestFixture
 {
     [Test]

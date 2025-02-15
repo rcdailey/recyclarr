@@ -5,7 +5,6 @@ using Recyclarr.TrashGuide.MediaNaming;
 
 namespace Recyclarr.Core.Tests.IntegrationTests.TrashGuide;
 
-[TestFixture]
 public class MediaNamingGuideServiceTest : IntegrationTestFixture
 {
     private void SetupMetadata()

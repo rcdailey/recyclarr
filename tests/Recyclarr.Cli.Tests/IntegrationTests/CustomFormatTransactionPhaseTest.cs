@@ -9,8 +9,7 @@ using Recyclarr.TrashGuide.CustomFormat;
 
 namespace Recyclarr.Cli.Tests.IntegrationTests;
 
-[TestFixture]
-internal class CustomFormatTransactionPhaseTest : CliIntegrationFixture
+public class CustomFormatTransactionPhaseTest : CliIntegrationFixture
 {
     [Test]
     public void Add_new_cf()

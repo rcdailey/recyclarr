@@ -7,7 +7,6 @@ using Recyclarr.TrashGuide.CustomFormat;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.CustomFormat.PipelinePhases;
 
-[TestFixture]
 public class CustomFormatConfigPhaseTest
 {
     [Test]

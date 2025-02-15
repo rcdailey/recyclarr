@@ -5,7 +5,6 @@ using Recyclarr.Config.Models;
 
 namespace Recyclarr.Core.Tests.UnitTests.Cache;
 
-[TestFixture]
 [SuppressMessage(
     "ReSharper",
     "ClassNeverInstantiated.Local",

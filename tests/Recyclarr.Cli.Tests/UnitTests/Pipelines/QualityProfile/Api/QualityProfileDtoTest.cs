@@ -3,7 +3,6 @@ using Recyclarr.ServarrApi.QualityProfile;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualityProfile.Api;
 
-[TestFixture]
 public class QualityProfileDtoTest
 {
     [TestCase(null, false)]

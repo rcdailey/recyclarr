@@ -4,7 +4,6 @@ using Recyclarr.TrashGuide.QualitySize;
 
 namespace Recyclarr.Core.Tests.IntegrationTests;
 
-[TestFixture]
 public class QualitySizeGuideParserTest : IntegrationTestFixture
 {
     [Test]

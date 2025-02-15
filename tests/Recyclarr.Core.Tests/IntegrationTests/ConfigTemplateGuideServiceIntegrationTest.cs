@@ -5,7 +5,6 @@ using Recyclarr.TrashGuide;
 
 namespace Recyclarr.Core.Tests.IntegrationTests;
 
-[TestFixture]
 public class ConfigTemplateGuideServiceIntegrationTest : IntegrationTestFixture
 {
     [Test, AutoMockData]

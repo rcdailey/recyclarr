@@ -6,7 +6,6 @@ using Spectre.Console.Testing;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Processors;
 
-[TestFixture]
 public class ConfigTemplateListerTest
 {
     [Test, AutoMockData]

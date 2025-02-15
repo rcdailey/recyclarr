@@ -2,7 +2,6 @@ using Recyclarr.Common;
 
 namespace Recyclarr.Core.Tests.UnitTests.Common;
 
-[TestFixture]
 public class ScopedStateTest
 {
     [Test]

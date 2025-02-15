@@ -5,7 +5,6 @@ using Recyclarr.Repo;
 
 namespace Recyclarr.Cli.Tests.IntegrationTests;
 
-[TestFixture]
 internal class TemplateConfigCreatorIntegrationTest : CliIntegrationFixture
 {
     [Test]

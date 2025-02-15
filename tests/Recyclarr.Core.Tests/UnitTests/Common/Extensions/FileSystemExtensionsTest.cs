@@ -6,7 +6,6 @@ using Recyclarr.TestLibrary;
 
 namespace Recyclarr.Core.Tests.UnitTests.Common.Extensions;
 
-[TestFixture]
 public class FileSystemExtensionsTest
 {
     private static IEnumerable<string> ReRootFiles(

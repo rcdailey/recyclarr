@@ -4,7 +4,6 @@ using Recyclarr.TestLibrary;
 
 namespace Recyclarr.Core.Tests.UnitTests.Json;
 
-[TestFixture]
 public class JsonUtilsTest
 {
     [Test]

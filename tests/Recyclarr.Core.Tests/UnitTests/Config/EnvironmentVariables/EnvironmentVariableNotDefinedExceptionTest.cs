@@ -2,7 +2,6 @@ using Recyclarr.Config.EnvironmentVariables;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.EnvironmentVariables;
 
-[TestFixture]
 public class EnvironmentVariableNotDefinedExceptionTest
 {
     [Test]

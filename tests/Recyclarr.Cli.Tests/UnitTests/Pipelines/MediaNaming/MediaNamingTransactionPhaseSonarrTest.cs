@@ -5,7 +5,6 @@ using Recyclarr.ServarrApi.MediaNaming;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.MediaNaming;
 
-[TestFixture]
 [SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope")]
 public class MediaNamingTransactionPhaseSonarrTest
 {

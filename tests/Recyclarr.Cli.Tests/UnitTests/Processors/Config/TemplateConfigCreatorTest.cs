@@ -6,7 +6,6 @@ using Recyclarr.TrashGuide;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Processors.Config;
 
-[TestFixture]
 public class TemplateConfigCreatorTest
 {
     [Test, AutoMockData]

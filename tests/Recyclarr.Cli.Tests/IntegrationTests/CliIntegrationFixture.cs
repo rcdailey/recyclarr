@@ -3,7 +3,7 @@ using Recyclarr.TestLibrary;
 
 namespace Recyclarr.Cli.Tests.IntegrationTests;
 
-internal abstract class CliIntegrationFixture : IntegrationTestFixture
+public abstract class CliIntegrationFixture : IntegrationTestFixture
 {
     protected override void RegisterTypes(ContainerBuilder builder)
     {

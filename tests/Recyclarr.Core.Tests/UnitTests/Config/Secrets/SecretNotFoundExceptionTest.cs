@@ -2,7 +2,6 @@ using Recyclarr.Config.Secrets;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Secrets;
 
-[TestFixture]
 public class SecretNotFoundExceptionTest
 {
     [Test]

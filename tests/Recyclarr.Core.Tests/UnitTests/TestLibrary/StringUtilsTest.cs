@@ -2,7 +2,6 @@ using Recyclarr.TestLibrary;
 
 namespace Recyclarr.Core.Tests.UnitTests.TestLibrary;
 
-[TestFixture]
 public class StringUtilsTest
 {
     [Test]

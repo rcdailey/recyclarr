@@ -6,7 +6,6 @@ using Recyclarr.TrashGuide.MediaNaming;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.MediaNaming.Config;
 
-[TestFixture]
 [Parallelizable(ParallelScope.All)]
 public class RadarrMediaNamingConfigPhaseTest
 {

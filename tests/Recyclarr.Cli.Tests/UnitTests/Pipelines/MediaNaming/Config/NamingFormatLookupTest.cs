@@ -2,7 +2,6 @@ using Recyclarr.Cli.Pipelines.MediaNaming.PipelinePhases.Config;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.MediaNaming.Config;
 
-[TestFixture]
 [Parallelizable(ParallelScope.All)]
 public class NamingFormatLookupTest
 {

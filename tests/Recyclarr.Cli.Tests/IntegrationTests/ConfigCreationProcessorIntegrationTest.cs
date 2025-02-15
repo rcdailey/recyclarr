@@ -6,7 +6,6 @@ using Recyclarr.Repo;
 
 namespace Recyclarr.Cli.Tests.IntegrationTests;
 
-[TestFixture]
 internal class ConfigCreationProcessorIntegrationTest : CliIntegrationFixture
 {
     [Test]

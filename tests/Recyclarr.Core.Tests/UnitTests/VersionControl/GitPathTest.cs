@@ -3,7 +3,6 @@ using Recyclarr.Settings;
 
 namespace Recyclarr.Core.Tests.UnitTests.VersionControl;
 
-[TestFixture]
 public class GitPathTest
 {
     [Test, AutoMockData]

@@ -8,7 +8,6 @@ using Recyclarr.Core.Tests.Reusable;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualityProfile.PipelinePhases;
 
-[TestFixture]
 public class QualityProfileConfigPhaseTest
 {
     private static RadarrConfiguration SetupCfs(params CustomFormatConfig[] cfConfigs)

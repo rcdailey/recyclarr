@@ -2,7 +2,6 @@ using Recyclarr.Common.Extensions;
 
 namespace Recyclarr.Core.Tests.UnitTests.Common.Extensions;
 
-[TestFixture]
 public class StringExtensionsTest
 {
     [Test]

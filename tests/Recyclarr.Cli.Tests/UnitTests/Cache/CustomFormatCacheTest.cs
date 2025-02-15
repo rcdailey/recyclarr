@@ -5,7 +5,6 @@ using Recyclarr.Core.Tests.Reusable;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Cache;
 
-[TestFixture]
 public class CustomFormatCacheTest
 {
     [Test]

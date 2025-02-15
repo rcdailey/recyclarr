@@ -4,7 +4,6 @@ using Recyclarr.TrashGuide;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Parsing.PostProcessing.ConfigMerging;
 
-[TestFixture]
 public class TemplateIncludeProcessorTest
 {
     [Test, AutoMockData]

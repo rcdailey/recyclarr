@@ -3,7 +3,6 @@ using Recyclarr.Config.Parsing;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Parsing;
 
-[TestFixture]
 public class ConfigYamlDataObjectsValidationTest
 {
     [Test]

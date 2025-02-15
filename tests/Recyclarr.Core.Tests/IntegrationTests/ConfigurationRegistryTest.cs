@@ -5,7 +5,6 @@ using Recyclarr.TestLibrary;
 
 namespace Recyclarr.Core.Tests.IntegrationTests;
 
-[TestFixture]
 public class ConfigurationRegistryTest : IntegrationTestFixture
 {
     [Test]

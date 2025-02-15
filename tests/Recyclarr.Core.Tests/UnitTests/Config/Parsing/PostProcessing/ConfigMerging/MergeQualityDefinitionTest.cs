@@ -3,7 +3,6 @@ using Recyclarr.Config.Parsing.PostProcessing.ConfigMerging;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Parsing.PostProcessing.ConfigMerging;
 
-[TestFixture]
 public class MergeQualityDefinitionTest
 {
     [Test]

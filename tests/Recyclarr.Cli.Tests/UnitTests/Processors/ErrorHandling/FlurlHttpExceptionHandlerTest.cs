@@ -5,7 +5,6 @@ using Recyclarr.TestLibrary;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Processors.ErrorHandling;
 
-[TestFixture]
 [SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope")]
 public class FlurlHttpExceptionHandlerTest
 {

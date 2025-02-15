@@ -6,7 +6,6 @@ using Recyclarr.ServarrApi.QualityDefinition;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualitySize.PipelinePhases;
 
-[TestFixture]
 public class QualitySizeTransactionPhaseTest
 {
     [Test, AutoMockData]
