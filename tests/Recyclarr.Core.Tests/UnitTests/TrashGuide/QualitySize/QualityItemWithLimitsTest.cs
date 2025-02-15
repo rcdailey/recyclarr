@@ -1,4 +1,4 @@
-using Recyclarr.Core.Tests.Reusable;
+using Recyclarr.TestLibrary.Core;
 using Recyclarr.TrashGuide.QualitySize;
 
 namespace Recyclarr.Core.Tests.UnitTests.TrashGuide.QualitySize;

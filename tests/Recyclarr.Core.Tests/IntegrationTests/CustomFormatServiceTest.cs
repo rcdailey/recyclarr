@@ -2,9 +2,9 @@ using Flurl.Http.Testing;
 using Recyclarr.Common;
 using Recyclarr.Config;
 using Recyclarr.Config.Models;
-using Recyclarr.Core.Tests.Reusable;
 using Recyclarr.ServarrApi.CustomFormat;
 using Recyclarr.TestLibrary;
+using Recyclarr.TestLibrary.Core;
 
 namespace Recyclarr.Core.Tests.IntegrationTests;
 

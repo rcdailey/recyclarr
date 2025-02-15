@@ -1,5 +1,5 @@
-using Recyclarr.Cli.Tests.Reusable;
 using Recyclarr.ServarrApi.QualityProfile;
+using Recyclarr.TestLibrary.Cli;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualityProfile.Api;
 

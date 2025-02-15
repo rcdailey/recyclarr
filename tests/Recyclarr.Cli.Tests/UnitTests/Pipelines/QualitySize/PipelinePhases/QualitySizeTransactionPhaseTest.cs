@@ -1,8 +1,8 @@
 using Recyclarr.Cli.Pipelines.QualitySize;
 using Recyclarr.Cli.Pipelines.QualitySize.Models;
 using Recyclarr.Cli.Pipelines.QualitySize.PipelinePhases;
-using Recyclarr.Core.Tests.Reusable;
 using Recyclarr.ServarrApi.QualityDefinition;
+using Recyclarr.TestLibrary.Core;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualitySize.PipelinePhases;
 

@@ -1,6 +1,6 @@
 using Recyclarr.TrashGuide.QualitySize;
 
-namespace Recyclarr.Core.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Core;
 
 public static class NewQualitySize
 {

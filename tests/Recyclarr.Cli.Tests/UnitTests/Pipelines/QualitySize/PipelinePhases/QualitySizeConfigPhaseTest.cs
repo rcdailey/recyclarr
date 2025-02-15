@@ -2,8 +2,8 @@ using System.Globalization;
 using NSubstitute.ReturnsExtensions;
 using Recyclarr.Cli.Pipelines.QualitySize;
 using Recyclarr.Cli.Pipelines.QualitySize.PipelinePhases;
-using Recyclarr.Cli.Tests.Reusable;
 using Recyclarr.Config.Models;
+using Recyclarr.TestLibrary.Cli;
 using Recyclarr.TrashGuide.QualitySize;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualitySize.PipelinePhases;

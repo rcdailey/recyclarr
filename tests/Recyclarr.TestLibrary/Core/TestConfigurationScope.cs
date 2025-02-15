@@ -1,7 +1,7 @@
 using Autofac;
 using Recyclarr.Config;
 
-namespace Recyclarr.Core.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Core;
 
 public class TestConfigurationScope(ILifetimeScope scope) : ConfigurationScope(scope)
 {

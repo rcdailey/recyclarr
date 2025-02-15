@@ -2,9 +2,9 @@ using AutoFixture;
 using Recyclarr.Cli.Pipelines.CustomFormat.Models;
 using Recyclarr.Cli.Pipelines.QualityProfile;
 using Recyclarr.Cli.Pipelines.QualityProfile.PipelinePhases;
-using Recyclarr.Cli.Tests.Reusable;
 using Recyclarr.Config.Models;
-using Recyclarr.Core.Tests.Reusable;
+using Recyclarr.TestLibrary.Cli;
+using Recyclarr.TestLibrary.Core;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Pipelines.QualityProfile.PipelinePhases;
 

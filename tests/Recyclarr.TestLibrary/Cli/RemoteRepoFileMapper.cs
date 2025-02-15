@@ -3,7 +3,7 @@ using System.IO.Abstractions;
 using System.Reactive.Linq;
 using Flurl.Http;
 
-namespace Recyclarr.Cli.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Cli;
 
 public class RemoteRepoFileMapper
 {

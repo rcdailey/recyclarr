@@ -1,9 +1,9 @@
 using System.IO.Abstractions;
 using System.Text.Json;
 using Autofac;
-using Recyclarr.Core.Tests.Reusable;
 using Recyclarr.TestLibrary;
 using Recyclarr.TestLibrary.Autofac;
+using Recyclarr.TestLibrary.Core;
 using Recyclarr.TrashGuide.CustomFormat;
 
 namespace Recyclarr.Core.Tests.IntegrationTests;

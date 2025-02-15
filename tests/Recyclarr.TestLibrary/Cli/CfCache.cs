@@ -1,6 +1,6 @@
 using Recyclarr.Cli.Pipelines.CustomFormat.Cache;
 
-namespace Recyclarr.Cli.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Cli;
 
 public static class CfCache
 {

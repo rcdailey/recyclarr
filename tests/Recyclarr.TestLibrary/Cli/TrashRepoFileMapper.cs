@@ -1,4 +1,4 @@
-namespace Recyclarr.Cli.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Cli;
 
 public class TrashRepoFileMapper : RemoteRepoFileMapper
 {

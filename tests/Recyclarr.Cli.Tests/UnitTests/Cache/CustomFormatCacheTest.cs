@@ -1,7 +1,7 @@
 using Recyclarr.Cli.Pipelines.CustomFormat.Cache;
 using Recyclarr.Cli.Pipelines.CustomFormat.Models;
-using Recyclarr.Cli.Tests.Reusable;
-using Recyclarr.Core.Tests.Reusable;
+using Recyclarr.TestLibrary.Cli;
+using Recyclarr.TestLibrary.Core;
 
 namespace Recyclarr.Cli.Tests.UnitTests.Cache;
 

@@ -2,9 +2,9 @@ using Recyclarr.Cli.Pipelines.CustomFormat;
 using Recyclarr.Cli.Pipelines.CustomFormat.Cache;
 using Recyclarr.Cli.Pipelines.CustomFormat.Models;
 using Recyclarr.Cli.Pipelines.CustomFormat.PipelinePhases;
-using Recyclarr.Cli.Tests.Reusable;
 using Recyclarr.Config;
-using Recyclarr.Core.Tests.Reusable;
+using Recyclarr.TestLibrary.Cli;
+using Recyclarr.TestLibrary.Core;
 using Recyclarr.TrashGuide.CustomFormat;
 
 namespace Recyclarr.Cli.Tests.IntegrationTests;

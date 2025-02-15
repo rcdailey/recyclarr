@@ -2,7 +2,7 @@ using FluentValidation;
 using FluentValidation.Results;
 using Recyclarr.Common.FluentValidation;
 using Recyclarr.Config.Parsing;
-using Recyclarr.Core.Tests.Reusable;
+using Recyclarr.TestLibrary.Core;
 
 namespace Recyclarr.Core.Tests.UnitTests.Config.Parsing;
 

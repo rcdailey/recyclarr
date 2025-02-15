@@ -1,9 +1,9 @@
 using Recyclarr.Cli.Pipelines.QualitySize.PipelinePhases.Limits;
-using Recyclarr.Core.Tests.Reusable;
+using Recyclarr.TestLibrary.Core;
 using Recyclarr.TrashGuide;
 using Recyclarr.TrashGuide.QualitySize;
 
-namespace Recyclarr.Cli.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Cli;
 
 public class TestQualityItemLimitFactory : IQualityItemLimitFactory
 {

@@ -4,7 +4,7 @@ using Recyclarr.Cli.Pipelines.QualityProfile.Models;
 using Recyclarr.Config.Models;
 using Recyclarr.ServarrApi.QualityProfile;
 
-namespace Recyclarr.Cli.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Cli;
 
 public static class NewQp
 {

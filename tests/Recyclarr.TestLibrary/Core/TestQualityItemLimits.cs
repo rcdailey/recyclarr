@@ -1,4 +1,4 @@
-namespace Recyclarr.Core.Tests.Reusable;
+namespace Recyclarr.TestLibrary.Core;
 
 public static class TestQualityItemLimits
 {
